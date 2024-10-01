@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager App</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="container w-[80vw] m-auto p-6">
+        <h1 class="text-4xl font-bold text-center mb-4 text-[#0693e3]">Nure's Task Manager</h1>
+        <h1 class="text-xl text-center mb-4 text-gray-600 mb-10">Start single step today to achieve thousnd miles goal</h1>
+        
+        <div id="taskForm" class="flex gap-3 mb-4">
+            <input type="text" id="taskName" placeholder="Add New Task" class="border border-gray-300 p-2 rounded w-2/3">
+            <input type="date" id="dueDate" class="border border-gray-300 p-2 rounded w-1/4">
+            <button id="addTask" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded" style="background-color:#00d084;">Add Task</button>
+        </div>
+
+        <ul id="taskList" class="space-y-4">
+            <!-- Tasks will be rendered here -->
+        </ul>
+    </div>
+    <!-- Add JavaScript Here -->
+    <script defer src="app.js"></script>
+</body>
+</html>
